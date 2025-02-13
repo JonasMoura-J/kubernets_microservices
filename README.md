@@ -12,3 +12,12 @@ Minikube doc e instalação:
 https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download
 
 minikube start
+
+minikube addons list
+
+csi-hostpath-driver
+
+
+APLICANDO AS CONFIGS DO K8s
+
+kubectl apply -f k8s/volumes.yaml -f k8s/mysql.yaml -f k8s/secrets.yaml
