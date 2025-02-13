@@ -2,7 +2,7 @@
 Subindo e gerenciando microserviços com kubernets
 
 build do docker gateway:
-docker build -t user_dock_hub/nome_build nome_microservice/.
+docker build -t user_dockerhub/java-gateway-k8s:v1 gateway/. ; docker build -t user_dockerhub/java-pedidos-k8s:v1 pedidos/. ; docker build -t user_dockerhub/java-pagamentos-k8s:v1 pagamentos/. ; docker build -t user_dockerhub/java-server-k8s:v1 server/.
 
 colocar o build em um repositório do docker hub:
 docker push user_dock_hub/nome_build
