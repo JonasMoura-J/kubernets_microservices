@@ -121,26 +121,28 @@ spec:
 ---
 
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: server
-  labels:
-    app: server
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: server
+  serviceName: "server"
+  replicas: 2
+  minReadySeconds: 10
   template:
     metadata:
       labels:
         app: server
     spec:
+      terminationGracePeriodSeconds: 10
       containers:
       - name: server
         image: jonasmourat/java-server-k8s:v3
         ports:
         - containerPort: 8081
+          name: server
         env:
         - name: SERVER_HOST
           valueFrom:
