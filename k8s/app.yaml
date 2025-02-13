@@ -136,9 +136,9 @@ spec:
     spec:
       containers:
       - name: server
-        image: jonasmourat/java-server-k8s:v1
+        image: jonasmourat/java-server-k8s:v2
         ports:
-        - containerPort: 80
+        - containerPort: 8081
         env:
         - name: SERVER_HOST
           valueFrom:
