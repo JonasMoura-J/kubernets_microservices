@@ -17,7 +17,6 @@ minikube addons list
 
 minikube addons enable csi-hostpath-driver
 
-
 APLICANDO AS CONFIGS DO K8s e criando pods
 
-kubectl apply -f k8s/volumes.yaml -f k8s/mysql.yaml -f k8s/secrets.yaml -f k8s/configmap.yaml -f k8s/app.yaml
+kubectl apply -f k8s/volumes.yaml -f k8s/mysql.yaml -f k8s/secrets.yaml -f k8s/configmap.yaml -f k8s/app.yaml -f k8s/loadbalancer.yaml
