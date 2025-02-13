@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: gateway
-        image: jonasmourat/java-gateway-k8s:v1
+        image: jonasmourat/java-gateway-k8s:v2
         ports:
         - containerPort: 80
         env:
@@ -46,7 +46,7 @@ spec:
     spec:
       containers:
       - name: pagamentos
-        image: jonasmourat/java-pagamentos-k8s:v1
+        image: jonasmourat/java-pagamentos-k8s:v2
         ports:
         - containerPort: 80
         env:
@@ -91,7 +91,7 @@ spec:
     spec:
       containers:
       - name: gateway
-        image: jonasmourat/java-pedidos-k8s:v1
+        image: jonasmourat/java-pedidos-k8s:v2
         ports:
         - containerPort: 80
         env:
@@ -136,7 +136,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: jonasmourat/java-server-k8s:v2
+        image: jonasmourat/java-server-k8s:v3
         ports:
         - containerPort: 8081
         env:
